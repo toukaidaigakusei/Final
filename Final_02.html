@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <title>システム開発A・最終課題</title>
+        <script src="./Final.js"></script>
+    </head>
+    <body>
+        <h1>IPPONグランプリ</h1>
+
+        <p><strong>IPPONグランプリ</strong>はTVで人気のお笑い芸人による大喜利番組です。このプログラムはその番組を再現しました!!<br>
+        お題は「普通のお題」と「写真で一言ルーレット」の2種類で、お題の中の問題がランダムで出題されます</p>
+        <p>詳しくは<a href="https://www.fujitv.co.jp/ippon/">こちら</a>をご覧ください<br>
+        このページは<strong>写真で一言ルーレット</strong>のページです</p>
+        <p>「普通のお題」で遊ぶためには<a href="./Final.html">こちら</a>をクリックして下さい<br>
+        以下に簡単な遊び方を記載します</p>
+
+        <ul>
+            <li>「写真で一言ルーレット」ボタンを押した後に「ストップ」ボタンを押してください</li>
+            <li>回答入力欄にあなたの回答を入力して「判定」ボタンを押してください</li>
+            <li>「判定は・・・」の部分に点数が表示されます</li>
+        </ul>
+    
+        <img id="Pic" src="./Ohgiri_1.jpg" alt="画像の切り替え">
+        <button type="button" onclick="FinalP()">写真で一言ルーレット!!</button>
+        <button type="button" onclick="Stop()">ストップ!!</button>
+        <div>
+            <a>以下にあなたの回答を入力してください</a>
+        </div>
+        <textarea type="text" id="textboxA"></textarea>
+        <button type="button" onclick="Ans()">判定</button>
+        <p id="Ohgiri">判定は・・・</p>
+        <p id="Seiseki">あなたの現在の成績がここに表示されます(画面遷移すると成績はリセットされます)</p>
+
+    </body>
+    <style>
+        #textboxA{width: 320px;height: 50px;}
+        strong{color: red;}
+    </style>
+</html>
